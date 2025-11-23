@@ -8,7 +8,7 @@
 
 Таблица pr_reviewers со связью many2many создавалась примерно так: pull_request_pull_request_id,
 user_user_id. Долго не понимал почему. Оказалось все просто - нужно было явно указать наименование:
-```json
+```go
 Reviewers   []User  `gorm:"many2many:pr_reviewers;joinForeignKey:PullRequestID;JoinReferences:UserID"
 ```
 
