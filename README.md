@@ -1,5 +1,15 @@
 ## Запуск
 
+#### Сборка через makefile:
+```shell
+  make build
+```
+#### Запуск docker-compose через makefile
+```shell
+  make
+```
+
+#### Простой запуск через shell
 ```shell
   docker-compose up --build
 ```
