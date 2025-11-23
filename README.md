@@ -11,7 +11,7 @@
 
 #### Простой запуск через shell
 ```shell
-  docker-compose up --build
+  docker-compose up
 ```
 
 ## Проблемы
