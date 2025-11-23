@@ -1,7 +1,7 @@
 ## Запуск
 
 ```shell
-  docker-compose up --buld
+  docker-compose up --build
 ```
 
 ## Проблемы
@@ -12,6 +12,6 @@ user_user_id. Долго не понимал почему. Оказалось в
 Reviewers   []User  `gorm:"many2many:pr_reviewers;joinForeignKey:PullRequestID;JoinReferences:UserID"
 ```
 
-
+---
 Я не стал использовать явную структуру TeamMember так как заметил, что User включает те же поля + просто один лишний.
 То есть User удовлетворяет TeamMember.
